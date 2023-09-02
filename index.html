@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Compressive Strength Predictor</title>
+    
+</head>
+<body>
+    <h1>Cement Property Predictor</h1>
+    <form action="/predict" method="POST">
+        <label for="Material_Quantity">Material Quantity (gm):</label><br>
+        <input type="text" id="Material_Quantity" name="Material_Quantity" required><br>
+
+        <label for="Additive_Catalyst">Additive Catalyst (gm):</label><br>
+        <input type="text" id="Additive_Catalyst" name="Additive_Catalyst" required><br>
+
+        <label for="Ash_Component">Ash Component (gm):</label><br>
+        <input type="text" id="Ash_Component" name="Ash_Component" required><br>
+
+        <label for="Water_Mix">Water Mix (ml):</label><br>
+        <input type="text" id="Water_Mix" name="Water_Mix" required><br>
+
+        <label for="Plasticizer">Plasticizer (gm):</label><br>
+        <input type="text" id="Plasticizer" name="Plasticizer" required><br>
+
+        <label for="Formulation_Duration_hrs">Formulation Duration (hrs):</label><br>
+        <input type="text" id="Formulation_Duration" name="Formulation_Duration" required><br>
+
+        <label for="Moderate_Aggregator">Moderate Aggregator:</label><br>
+        <input type="text" id="Moderate_Aggregator" name="Moderate_Aggregator" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
